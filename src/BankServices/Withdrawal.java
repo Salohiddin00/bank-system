@@ -1,11 +1,12 @@
 package BankServices;
 
 public class Withdrawal extends Operation{
-    public Withdrawal(int date,double amount){
-        super(amount, date);
+    public Withdrawal(double amount,double date){
+        super(amount,date);
     }
+
     @Override
-    public String toString() {
-        return "";
+    public String toString(){
+        return date + "," + amount + "-";
     }
 }

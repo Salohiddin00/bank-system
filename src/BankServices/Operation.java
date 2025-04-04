@@ -1,12 +1,15 @@
 package BankServices;
 
 public abstract class Operation {
-    protected int date;
-    protected double amount;
+    double amount;
+    double date;
 
-    public Operation(double amount, int date) {
+    public Operation(double amount,double date){
         this.amount = amount;
         this.date = date;
     }
-    public abstract String toString();
+    @Override
+    public String toString(){
+        return super.toString();
+    }
 }
